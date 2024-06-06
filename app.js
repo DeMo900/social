@@ -17,21 +17,12 @@ console.log("conected to db")
 }).catch((err)=>{
     console.log(`error from database ${err}`)
 })
-//signup schema
-let signup = new mongo.Schema({
+//user schema
+let user = new mongo.Schema({
     name:String,
     age:Number,
     password:String,
     lastname:String
 })
 
-let signupmodel = mongo.model("signup",signup)
-
-//login schema
-let login = new mongo.Schema({
-    name:String,
-    password:String
-})
-
-let loginmodel = mongo.model("login",login)
-
+let usermodel = mongo.model("user",user)
