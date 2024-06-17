@@ -11,4 +11,4 @@ let user = new mongo.Schema({
   let usermodel = mongo.model("user",user)
 
   //export usermodel
-  module.exports=usermodel;
+  module.exports=usermodel
